@@ -1,0 +1,27 @@
+.search-bar{
+    width: 35vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-bar input,button{
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+.search-bar input{
+    width: 27vw;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+.search-bar button{
+    background-color:blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-bar button:active{
+    background-color: rgb(10, 10, 10);
+}

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.listed-box {
+    width: 430px;
+    border: 0.5px solid black;
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.listed-box input {
+    width: 90%;
+    height: 30px;
+    padding-left: 10px;
+    display: block;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+}
+.listed-movie{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.list-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+}
+.listed-movie button{
+    width: 33px;
+    height: 20px;
+    border-radius: 10%;
+    background-color: red;
+    color: white;
+  
+}
+.listed-box p {
+    margin: 15px 20px;
+}
+.list-buttons button{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.list-buttons a{
+    text-decoration: none;
+    color: white;
+}
