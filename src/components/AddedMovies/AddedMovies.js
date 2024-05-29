@@ -7,7 +7,7 @@ import "./addedMovies.css";
 const AddedMovies = ({ cart, removeFromCart }) => {
   const [listName, setListName] = useState('');
   const dispatch = useDispatch();
-  const savedLists = useSelector((state) => state.savedLists); // Mevcut listeleri al
+  const savedLists = useSelector((state) => state.savedLists); 
 
   const handleSave = () => {
     if (listName.trim() === '' || cart.length === 0) {
