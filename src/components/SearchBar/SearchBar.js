@@ -12,15 +12,17 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <form className='search-bar' onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Write name of the film"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <button type="submit">Search</button>
-    </form>
+    <div>
+      <form className='search-bar' onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Write name of the film"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
   );
 }
 

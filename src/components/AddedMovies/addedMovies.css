@@ -5,7 +5,7 @@
 }
 
 .listed-box {
-    width: 430px;
+    max-width: 430px;
     border: 0.5px solid black;
     padding: 10px; 
     display: flex; 
@@ -38,22 +38,31 @@
     margin: 10px auto;
 }
 .listed-movie button{
-    width: 33px;
+    width: 20px;
     height: 20px;
-    border-radius: 10%;
+    border-radius: 50%;
     background-color: red;
     color: white;
   
 }
 .listed-box p {
-    margin: 15px 20px;
+    margin: 15px ;
 }
 .list-buttons button{
     background-color: blue;
     color: white;
     cursor: pointer;
+    
 }
 .list-buttons a{
     text-decoration: none;
     color: white;
 }
+@media screen and (max-width: 991px) and (min-width: 320px) {
+  .movie-title{
+    font-size: small;
+  }
+  
+
+
+  }

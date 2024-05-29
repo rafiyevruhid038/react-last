@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMovies, addToCart, removeFromCart } from '../../redux/slices/moviesSlice';
-import SearchBar from '../SearchBar/SearchBar';
 import AddedMovies from '../AddedMovies/AddedMovies';
 import './movieList.css';
 
@@ -15,15 +14,9 @@ function MovieList() {
     }
   }, [dispatch, searchText]);
 
-  const handleSearch = (text) => {
-    const trimmedText = text.trim();
-    dispatch(fetchMovies(trimmedText));
-  };
-
   return (
     <div className="container">
       <div>
-        <SearchBar onSearch={handleSearch} />
         {notFound ? (
           <div className="not-found">Not Found</div>
         ) : (

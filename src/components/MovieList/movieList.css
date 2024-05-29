@@ -33,3 +33,11 @@
 .title{
     margin: 10px;
 }
+@media screen and (max-width: 991px) and (min-width: 320px) {
+    .title{
+      font-size: small;
+    }
+    .add-to-list, .go-to-imdb{
+       font-size: 8px;
+    }
+}
